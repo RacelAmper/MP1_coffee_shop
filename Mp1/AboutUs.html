@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Timoteo's Coffee Shop and meeting Hub</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+ 
+
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+	
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+	  .navbar-expand-md {
+	    background-color: #4d3900;
+		}
+	.content-us {
+    background-color:  #fffae6;
+    width: 85%;
+    height: 2400px;
+    margin-top: 30px;	
+    display: inline-block;
+	margin-bottom: 50px;
+	color: #4d3d00;
+   }
+    .store-pic  {
+	  float: center;
+	  margin-left: 25px;
+	  margin-top: 25px;
+	  }
+	.title-store  {
+	  margin-top: 20px;
+	  font-size: 40px;
+	 
+	 }
+	.title-about-us {
+	margin-top: 150px;
+	font-size: 30px;
+	}
+	
+	.col {
+	margin-top: 50px;
+	float: center;
+	}
+	
+	
+	.openinghours {
+    font-family:Lucida Console;
+    border-radius:4px;
+    margin:10px;
+    box-shadow: 0 0 5px black;
+    padding:0 10px 0 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent h2 {
+    display:block;
+    text-align:center;
+    margin-top:.33em;
+}
+.openinghourscontent button {
+    color:white;
+    font-family:Courier New;
+    font-size:large;
+    font-weight:bolder;
+    background-color:#4679BD;
+    border-radius:4px;
+    width:100%;
+    margin-bottom:10px;
+}
+.today {
+    color: #8AC007;
+}
+.opening-hours-table tr td:first-child {
+    font-weight:bold;
+}
+  	
+#open-status {
+    display:block;
+    margin-top:-1em;
+    text-align:center;
+}
+.openorclosed:after {
+    content:" open during these hours:";
+}
+.open {
+    color:green;
+}
+.open:after {
+    content:" Open";
+    color: #6C0;
+}
+.closed:after {
+    content:" Closed";
+    color: red;
+}
+.opening-hours-table tr td {
+    padding:5px;	
+}	
+  .store-pic {
+     border: solid brown 5px;
+}	 
+   	
+    </style>  
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+ <header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">     
+      <a class="navbar-brand" href="index.html"> 
+	      <img class="timo" src="timo.jpg"  height="70" width="70" alt="Logo"/> </a>    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Menu</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link disabled2" href="ordernow1.html">Order Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled3" href="AboutUs.html">About Us</a>
+          </li>		    
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header> 
+  
+  
+  <div class="about-us"> 
+      <div>  <center><p class="title-about-us"><h1>About Us</h1><p> </center> </div>
+      <center>
+	  <div class="content-us"> 
+	         <p class="title-store">Timoteo's Coffee Shop and Meeting Hub</p>
+	        <img class="store-pic" src="storepic.png"  height="550" width="950" alt="store pic"/>  
+			<div class="container text-center">
+    
+	     <div class="rows align-items-start">
+              <div class="col">
+			        <h2>Location</h2>				 
+                 <div class="responsive-map mapsto">
+                    <iframe style="border: solid brown 5px;" src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sph!4v1685069958202!5m2!1sen!2sph!6m8!1m7!1sQlUqZ_yqcL4e-GYlz859OQ!2m2!1d7.145328672173625!2d125.5992804149258!3f232.32619799084142!4f-0.5562019051535856!5f0.7820865974627469" width="900" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h4>Unit 1, Hidalgo Homes Commercial Complex, Cabantian Indangan Road, Indangan Davao City</h4>
+				</div>
+              </div>
+			   <div class="col">
+			       <h2>Opening hours</h2>
+		    <section class="openinghours">
+                  <div class="openinghourscontent section">
+                  <div class="header">
+                     <h2></h2>
+                     <span id="open-status"><small class="openorclosed">We are</small></span>	  
+			    <table class="opening-hours-table">
+            <tr id="Monday" itemprop="openingHours" title="Open Monday at 9am to 6pm">
+                <td>Monday</td>
+                <td class="opens">09:00</td>
+                <td>-</td>
+                <td class="closes">18:00</td>
+            </tr>
+            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday at 9am to 6pm">
+                <td>Tuesday</td>
+                <td class="opens">09:00</td>
+                <td>-</td>
+                <td class="closes">18:00</td>
+            </tr>
+            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday at 9am to 6pm">
+                <td>Wednesday</td>
+                <td class="opens">09:00</td>
+                <td>-</td>
+                <td class="closes">18:00</td>
+            </tr>
+            <tr id="Thursday" itemprop="openingHours" title="Open Thursday at 9am to 8pm">
+                <td>Thursday</td>
+                <td class="opens">09:00</td>
+                <td>-</td>
+                <td class="closes">20:00</td>
+            </tr>
+            <tr id="Friday" itemprop="openingHours" title="Open Friday at 9am to 6pm">
+                <td>Friday</td>
+                <td class="opens">09:00</td>
+                <td>-</td>
+                <td class="closes">18:00</td>
+            </tr>
+            <tr id="Saturday" itemprop="openingHours" title="Open Saturday at 10am to 6pm">
+                <td>Saturday</td>
+                <td class="opens">10:00</td>
+                <td>-</td>
+                <td class="closes">18:00</td>
+            </tr>
+            <tr id="Sunday" itemprop="openingHours" title="Open Sunday at 11am to 4pm">
+                <td>Sunday</td>
+                <td class="opens">11:00</td>
+                <td>-</td>
+                <td class="closes">16:00</td>
+            </tr>
+        </table>
+          </section>
+        </div>
+          </div>
+        </div> <br />	<br />
+		<div><h2>Contact Us</h2></div>   
+ <div class="container12">     
+    <div class="content">
+      <div class="left-side">
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+6398 9893 5647</div>
+          <div class="text-two">+6396 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">codinglab@gmail.com</div>
+          <div class="text-two">info.codinglab@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+            <textarea id="subject" name="subject" placeholder="Enter your message.." style="height:100px"></textarea>
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+	  </div>	  
+      </center>	  
+	  
+  </div>
+  
+  
+  
+  
+  <hr class="featurette-divider">
+
+  </div>
+     
+<div class="footer">
+ <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="Menu.html" class="nav-link px-2 text-body-secondary">Menu</a></li>
+      <li class="nav-item"><a href="FeedbackForm.html" class="nav-link px-2 text-body-secondary">Feedback</a></li>
+      <li class="nav-item"><a href="AboutUs.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">&copy; 2023 Company, Inc</p>
+  </footer>
+</div>
+  <footer class="container1">
+    <p class="float-end"><a href="#">Back to top</a></p>
+  </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

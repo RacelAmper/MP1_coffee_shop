@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Timoteo's Coffee Shop and meeting Hub</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+	
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }    
+	  .navbar-expand-md {
+	    background-color: #4d3900;
+		}		      
+      .OrderNow   {
+	     margin-top: 150px;
+		 margin-left: 50px;
+		 margin-bottom: 50px;
+	  }
+	  .coll {
+	   display
+	  }
+	  .table  {
+		 padding-left: 100px;
+		 padding-right: 100px;
+		 padding-top: 50px;
+		 padding-bottom: 50px;
+		 
+	  }
+	  .table2  {     	  
+	   display: inline;
+	   margin-left: 100px;
+	   margin-right: 100px;
+     }	
+	  .back  {
+	   background-color:  #994d00;
+	   border: solid #e6b800 5px;
+	  }
+    </style> 
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+ <header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">     
+      <a class="navbar-brand" href="index.html"a> 
+	      <img class="timo" src="timo.jpg"  height="100" width="100" alt="Logo"/> </a>    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Menu</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link disabled2" href="ordernow1.html">Order Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled3" href="AboutUs.html">About Us</a>
+          </li>		  
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+	    
+	<div class="OrderNow">  <h1 class="oreder-now" style="color: #4d2500;">Order now!<br /><span style="color: #4d2500;"><i>To order, you may choose either the 2 platforms below.</i></span></h1><br />
+		<center>
+		<div class="table">
+		  <table class="table2">
+		      <thead class="back">
+                <tr>
+                 <th scope="coll"> 
+				     <h1 class="shop_taital" style="color:  #33cc33;">Get the <br><span style="color:  #33cc33;">Grab Food App</span> </h1>
+					   <div class="download_bt"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgrab.onelink.me%2F2695613898%3Fpid%3Dinappsharing%26c%3D2-C34TLJAUR6JWAE%26is_retargeting%3Dtrue%26af_dp%3Dgrab%253A%252F%252Fopen%253FscreenType%253DGRABFOOD%2526sourceID%253DA4pcqCZkS4%2526merchantIDs%253D2-C34TLJAUR6JWAE%26af_force_deeplink%3Dtrue%26af_web_dp%3Dhttps%253A%252F%252Fwww.grab.com%252Fdownload%26fbclid%3DIwAR3ZMPbkwv89hFZhHHxl6itzeuv0GS-znAmAf41R2wXCUyAYgACvYVIINYo&h=AT1wuv_ict6zAaBvfRB0TG0IvfF9yQqkfQ1f5kfJEt-g8CP2va9PJA-vLTPzsRuaNzCV4QQ9kPcTRdSRw7w0gz6KGcaHFC87LcOfkpo7aoc67YyvnN2dcxZZn8eF8LTqDPav&__tn__=-UK-R&c[0]=AT0XgTvw013XAhCJjIwX2HpYD76izzmZYX6lL3KZFgkHUIVZ29DOa9Mg3IKur1CasS7MGQG9E53ESyT45Ougswg9L0-u26FfDLqb1_oxSk3ddJGcvXaKGDuePCWNq-d7jm2U12yAO_5CRzX7Vx4fUoTglCYLHTXEwXU7iAOS8BDxZsfPkamiIat-x3dGzeTDI21oiDTLdYq7" target="_blank"><h3>Download Now</h3></a></div>                  
+                        <p class="shop_text"></p>
+                        <div class="app_icon_main">
+                           <div class="app_icon"><img src="icon-1.png"></div>
+                           <div class="app_icon"><img src="icon-2.png"></div>
+                        </div>			 
+				 </th>
+				 <th scope="coll">
+				     <div class="mobile_img"> <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgrab.onelink.me%2F2695613898%3Fpid%3Dinappsharing%26c%3D2-C34TLJAUR6JWAE%26is_retargeting%3Dtrue%26af_dp%3Dgrab%253A%252F%252Fopen%253FscreenType%253DGRABFOOD%2526sourceID%253DA4pcqCZkS4%2526merchantIDs%253D2-C34TLJAUR6JWAE%26af_force_deeplink%3Dtrue%26af_web_dp%3Dhttps%253A%252F%252Fwww.grab.com%252Fdownload%26fbclid%3DIwAR3ZMPbkwv89hFZhHHxl6itzeuv0GS-znAmAf41R2wXCUyAYgACvYVIINYo&h=AT1wuv_ict6zAaBvfRB0TG0IvfF9yQqkfQ1f5kfJEt-g8CP2va9PJA-vLTPzsRuaNzCV4QQ9kPcTRdSRw7w0gz6KGcaHFC87LcOfkpo7aoc67YyvnN2dcxZZn8eF8LTqDPav&__tn__=-UK-R&c[0]=AT0XgTvw013XAhCJjIwX2HpYD76izzmZYX6lL3KZFgkHUIVZ29DOa9Mg3IKur1CasS7MGQG9E53ESyT45Ougswg9L0-u26FfDLqb1_oxSk3ddJGcvXaKGDuePCWNq-d7jm2U12yAO_5CRzX7Vx4fUoTglCYLHTXEwXU7iAOS8BDxZsfPkamiIat-x3dGzeTDI21oiDTLdYq7" target="_blank"> <img src="grab.png" width="350" height="500"></a></div>				  
+				  </th>                
+                </tr>
+              </thead>	 
+		  </table>
+		  <table class="table2">
+		     <thead class="back">
+                <tr>
+                 <th scope="coll"> 				   
+					  <h1 class="shop_taital" style="color: #ff0066;">Get the <br><span style="color: #ff0066;">Food Panda App</span> </h1>
+					   <div class="download_bt"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgrab.onelink.me%2F2695613898%3Fpid%3Dinappsharing%26c%3D2-C34TLJAUR6JWAE%26is_retargeting%3Dtrue%26af_dp%3Dgrab%253A%252F%252Fopen%253FscreenType%253DGRABFOOD%2526sourceID%253DA4pcqCZkS4%2526merchantIDs%253D2-C34TLJAUR6JWAE%26af_force_deeplink%3Dtrue%26af_web_dp%3Dhttps%253A%252F%252Fwww.grab.com%252Fdownload%26fbclid%3DIwAR3ZMPbkwv89hFZhHHxl6itzeuv0GS-znAmAf41R2wXCUyAYgACvYVIINYo&h=AT1wuv_ict6zAaBvfRB0TG0IvfF9yQqkfQ1f5kfJEt-g8CP2va9PJA-vLTPzsRuaNzCV4QQ9kPcTRdSRw7w0gz6KGcaHFC87LcOfkpo7aoc67YyvnN2dcxZZn8eF8LTqDPav&__tn__=-UK-R&c[0]=AT0XgTvw013XAhCJjIwX2HpYD76izzmZYX6lL3KZFgkHUIVZ29DOa9Mg3IKur1CasS7MGQG9E53ESyT45Ougswg9L0-u26FfDLqb1_oxSk3ddJGcvXaKGDuePCWNq-d7jm2U12yAO_5CRzX7Vx4fUoTglCYLHTXEwXU7iAOS8BDxZsfPkamiIat-x3dGzeTDI21oiDTLdYq7" target="_blank"><h3>Download Now</h3></a></div>                  
+                        <p class="shop_text"></p>
+                        <div class="app_icon_main">
+                           <div class="app_icon"><img src="icon-1.png"></div>
+                           <div class="app_icon"><img src="icon-2.png"></div>
+                        </div>		 
+				 </th>
+				 <th scope="coll">
+				     <div class="mobile_img"> <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgrab.onelink.me%2F2695613898%3Fpid%3Dinappsharing%26c%3D2-C34TLJAUR6JWAE%26is_retargeting%3Dtrue%26af_dp%3Dgrab%253A%252F%252Fopen%253FscreenType%253DGRABFOOD%2526sourceID%253DA4pcqCZkS4%2526merchantIDs%253D2-C34TLJAUR6JWAE%26af_force_deeplink%3Dtrue%26af_web_dp%3Dhttps%253A%252F%252Fwww.grab.com%252Fdownload%26fbclid%3DIwAR3ZMPbkwv89hFZhHHxl6itzeuv0GS-znAmAf41R2wXCUyAYgACvYVIINYo&h=AT1wuv_ict6zAaBvfRB0TG0IvfF9yQqkfQ1f5kfJEt-g8CP2va9PJA-vLTPzsRuaNzCV4QQ9kPcTRdSRw7w0gz6KGcaHFC87LcOfkpo7aoc67YyvnN2dcxZZn8eF8LTqDPav&__tn__=-UK-R&c[0]=AT0XgTvw013XAhCJjIwX2HpYD76izzmZYX6lL3KZFgkHUIVZ29DOa9Mg3IKur1CasS7MGQG9E53ESyT45Ougswg9L0-u26FfDLqb1_oxSk3ddJGcvXaKGDuePCWNq-d7jm2U12yAO_5CRzX7Vx4fUoTglCYLHTXEwXU7iAOS8BDxZsfPkamiIat-x3dGzeTDI21oiDTLdYq7" target="_blank"> <img src="panda.png" width="350" height="500"></a></div>                    
+				 </th>                
+                </tr>
+              </thead>	 		   
+		   </table>	
+		   </div>
+          </div>	
+        </center>		  
+		</div>		
+		
+		   <hr style="margin-left: 0;">
+  </div>  
+  
+     <div class="footer1">
+        <footer class="py-3 my-4">
+           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+             <li class="nav-item"><a href="Menu.html" class="nav-link px-2 text-body-secondary">Menu</a></li>
+             <li class="nav-item"><a href="FeedbackForm.html" class="nav-link px-2 text-body-secondary">Feedback</a></li>			 
+             <li class="nav-item"><a href="AboutUs.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+            </ul>
+              <p class="text-center text-body-secondary">&copy; 2023 Company, Inc</p>
+         </footer>
+    </div>	
+                   <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+  </footer>
+   </main>
+    <script src="bootstrap.bundle.min.js"></script>      
+  </body>
+</html>
